@@ -1,0 +1,20 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "full-stack app that matches user data with session data to match friends. Uses Node.js and Express.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amp3193/FriendFinder.git"
+  },
+  "author": "Anna Perkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amp3193/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/amp3193/FriendFinder#readme"
+}
