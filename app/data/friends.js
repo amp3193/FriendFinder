@@ -16,3 +16,6 @@ const friends = [{
   }
 ];
   
+
+
+module.export(friends);
