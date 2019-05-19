@@ -1,19 +1,21 @@
-const friendsReq = require('./data/friends.js')(friends);
+const friendsData = require('../data/friends');
 
-function apiRoutes(friends) {
+module.exports = function(app) {
     app.get('/api/friends', function(req, res){
-        return res.json(friends);
+        return res.json(friendsData);
       });
 
       app.post('/api/friends', function (req, res) {
         let newFriend = req.body;
         console.log(newFriend);
-        friends.push(newFriend);
+        friendsData.push(newFriend);
         res.json(newFriend);
+
+        //check friendsData.length for each survey result if sum of survey results == my survey sum then assign to match variable 
       });
 }
 
-module.export(apiRoutes);
+
 
 //TODO logic for matching the results of the against my stats
 
