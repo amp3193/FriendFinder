@@ -8,6 +8,14 @@ module.exports = function(app) {
       app.get("/survey.html", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/survey.html"));
       });
+      
+      app.get("/survey.css", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/survey.css"));
+      });
+      
+      app.get("/survey.js", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/survey.js"));
+      });
 }
 
 // Your htmlRoutes.js file should include two routes:
