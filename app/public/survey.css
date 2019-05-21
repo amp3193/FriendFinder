@@ -1,6 +1,20 @@
 body {
     background-color: rgb(79, 184, 192);
     padding: 30px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+
+
+#header {
+    background-image: url('https://img.icons8.com/ios/420/friends.png');
+    background-size: 150px 200px;
+    background-color: rgb(243, 244, 247);
+    border-style: groove;
+    margin: auto;
+    padding: 10px;
+    opacity: 0.2;
+    height: 150px;
 }
 
 #question-row {
@@ -13,6 +27,8 @@ body {
 }
 
 
+
+
 img {
     width: 50%; 
     margin-top: 10px;
@@ -21,4 +37,9 @@ img {
 #submit {
     margin-top: 8px;
     font-weight: bold;
+}
+
+
+.form-group {
+    margin-top: 15px;
 }

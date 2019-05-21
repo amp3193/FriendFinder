@@ -67,13 +67,10 @@ function checkScores() {
 
     if (missingData) {
         alert("Please answer all questions.")
-        // TODO HighLight which or keep array and display which are unanswered
     } else if (!name) {
         alert("Please provide your name.")
-        // TODO HighLight which or keep array and display which are unanswered
     } else if (!image) {
         alert("Please provide an image.")
-        // TODO HighLight which or keep array and display which are unanswered
     } else {
         postAnswers(scores, name, image);
     };
@@ -87,10 +84,6 @@ function postAnswers(scores, name, photo) {
     };
     console.log(newFriend);
 
-    // This line is the magic. It"s very similar to the standard ajax function we used.
-    // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-    // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-    // depending on if a tables is available or not.
     $.post("/api/friends", newFriend, processResponse);
 }
 
