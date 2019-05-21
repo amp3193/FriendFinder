@@ -3,23 +3,22 @@ body {
     padding: 30px;
 }
 
-#header, #question-row, #answer-row, #submitdiv {
+#question-row {
     background-color: rgb(243, 244, 247);
     border-style: groove;
     margin: auto;
     padding: 20px;
-}
-
-#header {
-    text-align: center;
-}
-
-#question-row {
     text-align: left;
     font-size: 16px;
 }
 
+
 img {
-    width: 90%; 
+    width: 50%; 
     margin-top: 10px;
+}
+
+#submit {
+    margin-top: 8px;
+    font-weight: bold;
 }

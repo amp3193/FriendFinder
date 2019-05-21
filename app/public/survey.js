@@ -104,11 +104,16 @@ function processResponse(data) {
         $("#match-name").html(data.name);
         $("#match-image").html(`<img src="${data.photo}" alt="${data.name}">`);
         $("#myModal").modal();
+        $("#startOver").on('click', clear);
         
 
     } else {
         alert("No match found.");
     }
+}
+
+function clear() {
+    location.reload();
 }
 
 loadQuestions();
